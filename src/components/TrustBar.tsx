@@ -30,9 +30,9 @@ const PARTNERS: LogoDef[] = [
   { src: "/Apphelix.svg",      alt: "AppHelix",       w: 130, h: 40, svg: true,   },
   { src: "/Techdata.jpeg",     alt: "Techdata",       w: 110, h: 40, svg: false },
   // Text paths fill:white, icon fill:#0054FF → needs dark pill for text
-  { src: "/Sectona.svg",       alt: "Sectona",        w: 120, h: 40, svg: true,   },
+  // { src: "/Sectona.svg",       alt: "Sectona",        w: 120, h: 40, svg: true,   },
   // fill:#FF5500 inline style — SVG tag needed, no bg pill required
-  { src: "/BeyondTrust.svg",   alt: "BeyondTrust",    w: 150, h: 40, svg: true  },
+  // { src: "/BeyondTrust.svg",   alt: "BeyondTrust",    w: 150, h: 40, svg: true  },
 ];
 
 function bgClass(bg?: "dark" | "light"): string {

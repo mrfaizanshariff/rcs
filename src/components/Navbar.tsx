@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import Image from "next/image";
-import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { gsap } from "gsap";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -14,8 +14,6 @@ export default function Navbar() {
   const t = useTranslations("nav");
   const tPillars = useTranslations("pillars");
   const tCatalog = useTranslations("catalog");
-  const lt = useTranslations();
-  const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -41,8 +39,6 @@ export default function Navbar() {
     });
     return () => ctx.revert();
   }, []);
-
-  const altLocale = locale === "en" ? "ar" : "en";
 
   const linkClass = (href: string, active = pathname === href) =>
     cn(
@@ -71,7 +67,7 @@ export default function Navbar() {
           <Link
             href="/"
             aria-label="RCS Arabia Homepage"
-            className="flex items-center py-1 dark:bg-white dark:px-3"
+            className="flex items-center rounded-full py-1 dark:bg-white dark:px-5"
           >
             <Image
               className="h-8 w-[86px] sm:h-10 sm:w-[108px] md:h-12 md:w-[130px] lg:h-[66.6px] lg:w-45"
@@ -198,16 +194,6 @@ export default function Navbar() {
             <ThemeToggle  />
            </span>
 
-            {/* Language toggle */}
-            <Link
-              href={pathname}
-              locale={altLocale}
-              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border text-sm font-medium text-text-secondary hover:border-border-brand hover:text-link transition-colors"
-            >
-              <Globe className="w-3.5 h-3.5" />
-              {lt("lang_toggle")}
-            </Link>
-
             {/* Mobile hamburger */}
             <button
               className="lg:hidden p-2 rounded-md text-text-secondary hover:bg-surface-muted transition-colors"
@@ -322,15 +308,6 @@ export default function Navbar() {
               <span>{t("schedule_advisory")}</span>
             </Link>
             <ThemeToggle />
-            <Link
-              href={pathname}
-              locale={altLocale}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border text-sm font-medium text-text-secondary"
-              onClick={() => setMenuOpen(false)}
-            >
-              <Globe className="w-3.5 h-3.5" />
-              {lt("lang_toggle")}
-            </Link>
           </div>
         </div>
       )}

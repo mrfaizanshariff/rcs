@@ -3,7 +3,6 @@ import { getTranslations } from "next-intl/server";
 import WhoWeAreHero from "@/components/who-we-are/WhoWeAreHero";
 import AboutRcs from "@/components/who-we-are/AboutRcs";
 import CompanyJourney from "@/components/who-we-are/CompanyJourney";
-import Leadership from "@/components/Leadership";
 import VisionMission from "@/components/who-we-are/VisionMission";
 import RegionalPresence from "@/components/who-we-are/RegionalPresence";
 import OurApproach from "@/components/who-we-are/OurApproach";
@@ -51,7 +50,6 @@ export default function WhoWeArePage() {
       <WhoWeAreHero />
       <AboutRcs />
       <CompanyJourney />
-      <Leadership />
       <VisionMission />
       <RegionalPresence />
       <OurApproach />
