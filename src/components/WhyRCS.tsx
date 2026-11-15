@@ -12,6 +12,8 @@ const ITEMS = [
   { titleKey: "item3_title", descKey: "item3_desc" },
   { titleKey: "item4_title", descKey: "item4_desc" },
   { titleKey: "item5_title", descKey: "item5_desc" },
+  { titleKey: "item6_title", descKey: "item6_desc" },
+  { titleKey: "item7_title", descKey: "item7_desc" },
 ] as const;
 
 export default function WhyRCS() {
@@ -33,7 +35,10 @@ export default function WhyRCS() {
 
           <div ref={itemsRef} className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
             {ITEMS.map((item) => (
-              <div key={item.titleKey} className="p-6 rounded-2xl bg-surface-muted border border-border">
+              <div
+                key={item.titleKey}
+                className="p-6 rounded-2xl bg-surface-muted border border-border md:[&:last-child:nth-child(odd)]:col-span-2"
+              >
                 <h3 className="font-display font-bold text-lg text-text-primary mb-2">
                   {t(item.titleKey as WhyRCSKey)}
                 </h3>

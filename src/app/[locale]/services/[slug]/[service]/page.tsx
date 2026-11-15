@@ -106,6 +106,7 @@ export default async function ServicePage({ params }: { params: Promise<PagePara
     reporting: tPage("detail_reporting"),
     compliance: tPage("detail_compliance"),
     faq: tPage("detail_faq"),
+    proof: tPage("detail_proof"),
   };
 
   const memberCards = (members ?? []).map((memberKey) => ({
@@ -140,7 +141,13 @@ export default async function ServicePage({ params }: { params: Promise<PagePara
         subheadline={description}
       />
 
-      {detail && <ServiceDetails detail={detail} headings={detailHeadings} />}
+      {detail && (
+        <ServiceDetails
+          detail={detail}
+          headings={detailHeadings}
+          proofNote={tPage("detail_proof_note")}
+        />
+      )}
 
       {memberCards.length > 0 && (
         <ServiceCardGrid

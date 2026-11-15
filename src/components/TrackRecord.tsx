@@ -15,9 +15,10 @@ export default function TrackRecord() {
   const tPillars = useTranslations("pillars");
   const items = t.raw("items" as TrackRecordKey) as Stat[];
   const credentials = t.raw("credentials" as TrackRecordKey) as string[];
+  // The home strip shows the four headline outcomes; the pillar page lists all six.
   const kpis = (
     tPillars.raw("managed_services.attribution" as never) as { items: Stat[] }
-  ).items;
+  ).items.slice(0, 4);
 
   return (
     <section className="py-24 lg:py-32 relative">

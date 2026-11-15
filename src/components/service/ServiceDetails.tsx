@@ -17,24 +17,51 @@ export type DetailListSection = (typeof DETAIL_LIST_SECTIONS)[number];
  * placeholder. Content lives at `catalog.<service_key>.detail` in messages.
  */
 export type ServiceDetailContent = Partial<Record<DetailListSection, string[]>> & {
+  /** Intro paragraphs shown above the list sections. */
+  body?: string[];
+  /** One attributed track-record line from leadership-led programmes. */
+  proof?: string;
   faq?: { q: string; a: string }[];
 };
 
 interface ServiceDetailsProps {
   detail: ServiceDetailContent;
-  headings: Record<DetailListSection | "faq", string>;
+  headings: Record<DetailListSection | "faq" | "proof", string>;
+  proofNote: string;
 }
 
-export default function ServiceDetails({ detail, headings }: ServiceDetailsProps) {
+export default function ServiceDetails({ detail, headings, proofNote }: ServiceDetailsProps) {
   const lists = DETAIL_LIST_SECTIONS.filter((key) => detail[key]?.length);
   const faq = detail.faq?.length ? detail.faq : undefined;
-  if (!lists.length && !faq) return null;
+  const body = detail.body?.length ? detail.body : undefined;
+  const proof = detail.proof || undefined;
+  if (!lists.length && !faq && !body && !proof) return null;
 
   return (
     <section
       id="service-details"
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-16 lg:py-24"
     >
+      {body && (
+        <ScrollReveal className="mb-8 max-w-3xl space-y-4">
+          {body.map((paragraph) => (
+            <p key={paragraph} className="text-base text-text-secondary leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
+        </ScrollReveal>
+      )}
+
+      {proof && (
+        <ScrollReveal className="mb-8">
+          <div className="rcs-card rounded-xl p-6 max-w-3xl">
+            <h2 className="font-display font-bold text-base text-text-primary mb-2">{headings.proof}</h2>
+            <p className="text-sm text-text-secondary leading-relaxed">{proof}</p>
+            <p className="text-xs text-text-muted mt-3">{proofNote}</p>
+          </div>
+        </ScrollReveal>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {lists.map((key) => (
           <ScrollReveal key={key}>

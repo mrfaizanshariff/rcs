@@ -19,6 +19,8 @@ export interface AttributionStripProps {
  */
 export default function AttributionStrip({ note, items }: AttributionStripProps) {
   if (!items.length) return null;
+  // 3 and 6 items sit in rows of three; everything else in rows of four.
+  const columns = items.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4";
 
   return (
     <section
@@ -28,7 +30,7 @@ export default function AttributionStrip({ note, items }: AttributionStripProps)
       <ScrollReveal y={24}>
         <div className="rcs-card rounded-2xl p-8 sm:p-10">
           <p className="text-text-secondary text-sm sm:text-base mb-6 text-center">{note}</p>
-          <dl className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <dl className={`grid grid-cols-2 ${columns} gap-6`}>
             {items.map((item) => (
               <div key={item.value} className="flex flex-col items-center text-center gap-1.5">
                 <dt className="font-display text-xl sm:text-2xl font-extrabold text-link leading-tight">

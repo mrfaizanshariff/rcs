@@ -46,6 +46,43 @@ function ProjectList() {
   );
 }
 
+type CaseStudy = { client: string; since: string; scale: string; ran: string; results: string };
+type CaseStudyLabels = { attribution: string; since: string; scale: string; ran: string; results: string };
+
+/** Anonymous, structured case studies. Client names are deliberately not published. */
+function CaseStudyList({ studies, labels }: { studies: CaseStudy[]; labels: CaseStudyLabels }) {
+  const rows = [
+    ["scale", labels.scale],
+    ["ran", labels.ran],
+    ["results", labels.results],
+  ] as const;
+  return (
+    <div>
+      <p className="text-xs text-text-muted mb-4">{labels.attribution}</p>
+      <ul className="flex flex-col gap-4">
+        {studies.map((study) => (
+          <li key={study.client} className="rcs-card rounded-2xl p-6 sm:p-7">
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <h3 className="font-display text-base font-bold text-text-primary">{study.client}</h3>
+              <span className="rcs-tag rcs-tag-brand">
+                {labels.since}: {study.since}
+              </span>
+            </div>
+            <dl className="grid grid-cols-1 gap-3">
+              {rows.map(([field, label]) => (
+                <div key={field}>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-text-muted">{label}</dt>
+                  <dd className="text-sm text-text-secondary leading-relaxed mt-0.5">{study[field]}</dd>
+                </div>
+              ))}
+            </dl>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function InfoPage({ pageKey }: { pageKey: InfoPageKey }) {
   const t = useTranslations(`info_pages.${pageKey}`);
   const tc = useTranslations("info_pages.common");
@@ -81,9 +118,17 @@ export default function InfoPage({ pageKey }: { pageKey: InfoPageKey }) {
           </ScrollReveal>
         )}
         {pageKey === "case_studies" && (
-          <ScrollReveal>
-            <ProjectList />
-          </ScrollReveal>
+          <>
+            <ScrollReveal>
+              <CaseStudyList
+                studies={t.raw("studies") as CaseStudy[]}
+                labels={t.raw("labels") as CaseStudyLabels}
+              />
+            </ScrollReveal>
+            <ScrollReveal>
+              <ProjectList />
+            </ScrollReveal>
+          </>
         )}
 
         {sections.map(({ heading, body }) => (

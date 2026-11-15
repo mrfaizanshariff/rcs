@@ -22,10 +22,10 @@ export interface SectorDef {
 }
 
 export const SECTORS: readonly SectorDef[] = [
-  { slug: "banking", indKey: "ind1", services: ["banking_branch_atm_services"], figures: [1, 2], projects: [] },
+  { slug: "banking", indKey: "ind1", services: ["banking_branch_atm_services"], figures: [1], projects: [] },
   { slug: "healthcare", indKey: "ind2", services: ["healthcare_it_support"], figures: [], projects: [4, 5] },
   { slug: "telecom", indKey: "ind4", services: ["telecom_site_field_services"], figures: [3], projects: [] },
-  { slug: "facilities", indKey: "ind5", services: ["building_facility_systems"], figures: [], projects: [] },
+  { slug: "facilities", indKey: "ind5", services: ["government_facilities_om"], figures: [], projects: [] },
 ];
 
 export const sectorPath = (sector: SectorDef) => `/sectors/${sector.slug}`;

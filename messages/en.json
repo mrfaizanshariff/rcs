@@ -39,7 +39,7 @@
   },
   "hero": {
     "headline": "Built by the Team That Kept 960+ Bank Branches Running",
-    "subheadline": "Now running, installing and securing your IT and low current estate across the Kingdom under one SLA. RCS Arabia was established in Riyadh in 2004, and our team brings 200+ years of combined professional experience.",
+    "subheadline": "A Riyadh-based managed services and low current company, established in 2004, built by the team that ran the Kingdom's largest banking IT support programme for more than 20 years, and that set up and grew a managed services business unit running over SAR 100M a year.",
     "tagline": "Engineered to Impact",
     "cta_primary": "Talk to Our Team About Your Project",
     "cta_secondary": "Explore Our Services",
@@ -67,7 +67,7 @@
   },
   "about": {
     "headline": "One Team to Design, Deploy, Operate and Secure Your Technology",
-    "body": "RCS Arabia is a Riyadh-based managed services and low current company, established in 2004, with a team whose combined professional experience exceeds 200 years. We combine managed services, cybersecurity, ICT and low current systems, AI and data, and software and cloud engineering.\n\nOur teams design, deploy, operate and secure the technology that organisations depend on, with Saudi talent and Kingdom-wide reach. Supported by delivery arms in the US, India, and Pakistan.\n\nFrom the first assessment to day-to-day operations and continual improvement, one accountable team stays with you at every stage.",
+    "body": "RCS Arabia is a Riyadh-based managed services and low current company, established in 2004, with a team whose combined professional experience exceeds 200 years. We combine managed services, cybersecurity, ICT and low current systems, AI and data, and software and cloud engineering.\n\nOur leadership built managed services as a standalone business unit, run as a profit centre with 300+ cross-skilled engineers across 30+ cities. That team set up a 24/7 Remote Management Center for proactive monitoring, launched a digital and physical security line, and cut operating costs by more than 20% through process efficiency and vendor partnerships. RCS Arabia is built on the same people, processes and discipline.\n\nOur teams design, deploy, operate and secure the technology that organisations depend on, with Saudi talent and Kingdom-wide reach. Supported by delivery arms in the US, India, and Pakistan.\n\nFrom the first assessment to day-to-day operations and continual improvement, one accountable team stays with you at every stage.",
     "check1": "200+ Years of Combined Team Experience",
     "check2": "Saudi Talent with Kingdom-wide Reach",
     "check3": "End-to-End Capability Across the Full IT Stack",
@@ -113,19 +113,35 @@
     "items": [
       {
         "value": "200,000+",
-        "label": "end users supported across 1,000+ branches in 23+ cities"
+        "label": "end users supported under SLA across 1,000+ branches in 23+ cities"
       },
       {
-        "value": "960+",
-        "label": "bank branches supported 24/7 for 20+ years"
+        "value": "960+ branches",
+        "label": "supported 24/7 for one bank for 20+ years, with 5,200+ ATMs and 55,000+ POS terminals"
       },
       {
-        "value": "5,200+ ATMs",
-        "label": "and 55,000+ POS terminals supported"
+        "value": "150,000+",
+        "label": "PCs and notebooks under management, plus 100+ business applications"
       },
       {
         "value": "6,500+",
-        "label": "telecom sites under field support"
+        "label": "telecom sites under field support (microwave, fiber, 4G, 5G, LTE)"
+      },
+      {
+        "value": "340+",
+        "label": "engineers deployed across 30+ cities and regions in the Kingdom"
+      },
+      {
+        "value": "2,000+",
+        "label": "skilled professionals placed on client sites through managed staffing"
+      },
+      {
+        "value": "98%",
+        "label": "compliance with a < 4-hour SLA; 99.1% ticket SLA compliance on 14,790 tickets in one month"
+      },
+      {
+        "value": "< 2%",
+        "label": "customer escalation rate, with > 98% customer satisfaction on our largest programme"
       }
     ]
   },
@@ -133,15 +149,15 @@
     "headline": "Where Our Services Are Put to Work",
     "subheadline": "Examples of how organisations in these sectors use our managed services, cybersecurity, ICT and low current systems, and AI and data services.",
     "sector1_title": "Banking",
-    "sector1_desc": "Branch IT, ATM and self-service channel support under SLAs, backed by security operations that support your regulatory and audit requirements.",
+    "sector1_desc": "Branch IT, ATM and self-service channel support under SLAs, backed by security operations that support your regulatory and audit requirements. Programmes led by our leadership team have supported Saudi banks since 2001: branch, ATM, POS, NOC, VDI and card-printing operations.",
     "sector2_title": "Healthcare",
-    "sector2_desc": "End-user, clinical-device and hospital information system support, so critical care environments run without IT interruptions.",
+    "sector2_desc": "End-user, clinical-device and hospital information system support, so critical care environments run without IT interruptions. Programmes led by our leadership team have delivered 24/7 command-center monitoring with AI-based alerting for a major Eastern Province healthcare provider.",
     "sector3_title": "Government & Public Sector",
-    "sector3_desc": "Managed services, cybersecurity and ICT infrastructure delivered with Saudi talent and Kingdom-wide reach.",
+    "sector3_desc": "Managed services, cybersecurity and ICT infrastructure delivered with Saudi talent and Kingdom-wide reach. Programmes led by our leadership team have delivered managed services and ITSM for ministries, authorities and customs and port operators across the Kingdom.",
     "sector4_title": "Telecom",
-    "sector4_desc": "Corrective and preventive maintenance, new installations and passive cabling for microwave, fiber, 4G/5G and LTE sites, with Kingdom-wide field support.",
+    "sector4_desc": "Corrective and preventive maintenance, new installations and passive cabling for microwave, fiber, 4G/5G and LTE sites, with Kingdom-wide field support. Programmes led by our leadership team have provided first-line maintenance for 6,500+ sites Kingdom-wide for a global telecom vendor.",
     "sector5_title": "Facilities & Buildings",
-    "sector5_desc": "Operation and maintenance support for building management, parking, electricity and water systems, with IoT-based asset monitoring.",
+    "sector5_desc": "Operation and maintenance support for building management, parking, electricity and water systems, with IoT-based asset monitoring. Programmes led by our leadership team have delivered smart gates, CCTV and civil works for port and border crossings, plus O&M for building systems.",
     "sector6_title": "Hospitality",
     "sector6_desc": "Audio visual systems, digital signage and ICT infrastructure for hotels and venues, designed, installed and supported by one team."
   },
@@ -157,7 +173,11 @@
     "item4_title": "Predictable Costs",
     "item4_desc": "Flexible pricing models, from per user and per device to all-inclusive, give you predictable monthly costs.",
     "item5_title": "End-to-End Capability",
-    "item5_desc": "One team across the full IT stack, from the end user and the data center to cybersecurity, applications and AI."
+    "item5_desc": "One team across the full IT stack, from the end user and the data center to cybersecurity, applications and AI.",
+    "item6_title": "A Proven Transition Method",
+    "item6_desc": "Zero-disruption takeover in about 90 days, using knowledge retained from rebadged staff, a baselined SLA and a risk register from day one.",
+    "item7_title": "Saudi Talent, Built In",
+    "item7_desc": "A hiring and upskilling framework designed for Saudisation, so the client's operation builds local capability rather than depending on expatriate staffing."
   },
   "regional": {
     "headline": "Supporting Organisations Across Saudi Arabia & the GCC",
@@ -358,8 +378,8 @@
     "cta_secondary": "Explore Our Services",
     "email_label": "Email",
     "sales_label": "Sales",
-    "call_label":"Call Us",
-    "whatsapp_label":"whatsapp Us"
+    "call_label": "Call Us",
+    "whatsapp_label": "whatsapp Us"
   },
   "lang_toggle": "عربي",
   "what_we_offer_meta": {
@@ -390,15 +410,15 @@
     "subheadline": "Examples of how organisations in these sectors use our managed services, cybersecurity, ICT and low current systems, and AI and data services.",
     "link_label": "Industry & specialised services",
     "ind1_title": "Banking",
-    "ind1_desc": "Branch IT, ATM and self-service channel support under SLAs, backed by security operations that support your regulatory and audit requirements.",
+    "ind1_desc": "Branch IT, ATM and self-service channel support under SLAs, backed by security operations that support your regulatory and audit requirements. Programmes led by our leadership team have supported Saudi banks since 2001: branch, ATM, POS, NOC, VDI and card-printing operations.",
     "ind2_title": "Healthcare",
-    "ind2_desc": "End-user, clinical-device and hospital information system support, so critical care environments run without IT interruptions.",
+    "ind2_desc": "End-user, clinical-device and hospital information system support, so critical care environments run without IT interruptions. Programmes led by our leadership team have delivered 24/7 command-center monitoring with AI-based alerting for a major Eastern Province healthcare provider.",
     "ind3_title": "Government & Public Sector",
-    "ind3_desc": "Managed services, cybersecurity and ICT infrastructure delivered with Saudi talent and Kingdom-wide reach.",
+    "ind3_desc": "Managed services, cybersecurity and ICT infrastructure delivered with Saudi talent and Kingdom-wide reach. Programmes led by our leadership team have delivered managed services and ITSM for ministries, authorities and customs and port operators across the Kingdom.",
     "ind4_title": "Telecom",
-    "ind4_desc": "Corrective and preventive maintenance, new installations and passive cabling for microwave, fiber, 4G/5G and LTE sites, with Kingdom-wide field support.",
+    "ind4_desc": "Corrective and preventive maintenance, new installations and passive cabling for microwave, fiber, 4G/5G and LTE sites, with Kingdom-wide field support. Programmes led by our leadership team have provided first-line maintenance for 6,500+ sites Kingdom-wide for a global telecom vendor.",
     "ind5_title": "Facilities & Buildings",
-    "ind5_desc": "Operation and maintenance support for building management, parking, electricity and water systems, with IoT-based asset monitoring.",
+    "ind5_desc": "Operation and maintenance support for building management, parking, electricity and water systems, with IoT-based asset monitoring. Programmes led by our leadership team have delivered smart gates, CCTV and civil works for port and border crossings, plus O&M for building systems.",
     "ind6_title": "Hospitality",
     "ind6_desc": "Audio visual systems, digital signage and ICT infrastructure for hotels and venues, designed, installed and supported by one team."
   },
@@ -442,8 +462,8 @@
     "cta_secondary": "Contact Us",
     "label_inquiries": "Email",
     "sales_label": "Sales",
-    "call_label":"Call Us",
-    "whatsapp_label":"whatsapp Us"
+    "call_label": "Call Us",
+    "whatsapp_label": "whatsapp Us"
   },
   "contact_meta": {
     "title": "Contact RCS Arabia | Managed Services, Cybersecurity, AI, Cloud & ICT",
@@ -557,14 +577,14 @@
     "subheadline": "RCS Arabia is led by people who have spent their careers delivering some of the Kingdom's most demanding IT service programmes.",
     "badge": "Our Leadership",
     "person1_name": "Usman Khan Durrani",
-    "person1_role": "Co-Founder",
-    "person1_bio": "~30 years in managed services, digital and physical security. Former Head of Managed Services at Arabic Computer Systems (ACS), where he built the banking, telecom and enterprise programmes behind RCS Arabia's delivery numbers. Former Senior Commercial Director at Darsas Security; earlier at Microland.",
+    "person1_role": "Co-Founder & CEO",
+    "person1_bio": "Nearly 30 years in IT service delivery, managed services and digital and physical security, more than 25 of them serving Saudi enterprises. As Director of IT Managed Services at Arabic Computer Systems (ACS), Usman set up managed services as its own business unit, run as a profit centre with more than SAR 100M in yearly business and 300+ staff. He established a 24/7 Remote Management Centre, launched a physical and digital security line worth about USD 30M (thermal cameras, central monitoring stations, fire alarm and AI/IoT intrusion detection), and cut operating costs by more than 20%. Before that he spent four years as Senior Service Delivery Manager at ACS and 18 years at Microland, rising from support engineer to service delivery manager. Most recently he was Senior Commercial Director at Darsas Security. Credentials: B.Sc. Computer Science (University of Mysore) · ITIL · COBIT 5 · MCSE · CCNA · Active Operations Management.",
     "person1_tag1": "Managed Services",
     "person1_tag2": "Digital & Physical Security",
-    "person1_tag3": "30+ Years in Saudi IT",
+    "person1_tag3": "25+ Years in Saudi IT",
     "person2_name": "Rafi Al-Khalidi",
     "person2_role": "Co-Founder",
-    "person2_bio": "32+ years at Arabic Computer Systems (ACS), last serving as Group General Manager when ACS reached ~SAR 1 billion in revenue and attained Microsoft Platinum partnership status.",
+    "person2_bio": "32+ years at Arabic Computer Systems (ACS), last serving as Group General Manager when ACS reached ~SAR 1 billion in revenue and attained Microsoft Platinum partnership status. Brings long-standing relationships with leading technology vendors and senior public-sector stakeholders.",
     "person2_tag1": "32+ Years at ACS",
     "person2_tag2": "Group General Management",
     "person2_tag3": "~SAR 1B Revenue Scale"
@@ -627,14 +647,14 @@
         "badge": "Service Overview",
         "headline": "AI and Analytics Built for Real Operations",
         "body": [
-          "RCS Arabia's AI & Data practice helps organisations move beyond experimentation. We design, prototype and deploy generative AI solutions — including agents that automate repetitive work with human oversight kept in place.",
+          "Most AI projects stall between the pilot and production. We close that gap with a Forward Deployed Engineering approach: our engineers sit with your teams, find the processes where AI pays back, build on your own data and systems, and stay until the solution is running and adopted. Because we come from operations, every solution ships with monitoring, support and a named owner, not just a demo.",
           "From data pipelines to predictive analytics, we turn your data into intelligence. Your teams get dependable data foundations and clear, business-ready insight for better decisions."
         ]
       },
       "services": {
         "badge": "Our Services",
         "headline": "What We Deliver",
-        "subheadline": "Two tightly connected services that build your AI capability and your data foundation at the same time."
+        "subheadline": "Four connected services that take AI from discovery to production, on dependable data foundations."
       },
       "useCases": {
         "badge": "Use Cases",
@@ -656,6 +676,18 @@
           {
             "title": "Predictive Maintenance and Asset Optimisation",
             "description": "Sensor and operational data feeds into models that flag failures before they happen, helping facilities and infrastructure teams schedule maintenance proactively."
+          },
+          {
+            "title": "AI Video Analytics for Security and Traffic",
+            "description": "Video analytics that turn camera feeds into alerts and counts, delivered together with our ICT & Low Current Systems pillar."
+          },
+          {
+            "title": "Predictive Hardware Failure",
+            "description": "Models trained on service-desk history flag devices likely to fail, so they are replaced before users are affected."
+          },
+          {
+            "title": "Healthcare Data Analytics",
+            "description": "Analytics for operational and population insight across hospital and clinic data."
           }
         ]
       },
@@ -668,6 +700,23 @@
         "eyebrow": "Get Started",
         "headline": "Ready to Put AI to Work?",
         "subheadline": "Talk to our team about a practical AI or data assessment for your organisation. Email us at info@rcsarabia.sa."
+      },
+      "attribution": {
+        "note": "From programmes led by our leadership team:",
+        "items": [
+          {
+            "value": "AI-based alerting",
+            "label": "in 24/7 command-center monitoring"
+          },
+          {
+            "value": "End-to-end AIOps",
+            "label": "with big-data analytics across infrastructure, network, database and applications"
+          },
+          {
+            "value": "Up to 30%",
+            "label": "manpower efficiency targeted by automation roadmaps"
+          }
+        ]
       }
     },
     "software_cloud_engineering": {
@@ -677,14 +726,14 @@
       },
       "hero": {
         "eyebrow": "Software & Cloud Engineering",
-        "headline": "Applications and Cloud Platforms Built to Last",
+        "headline": "Applications and Cloud Platforms Built to Be Run",
         "subheadline": "We build what you need, modernise what you have, and keep it running reliably — with engineers who consult as well as deliver."
       },
       "overview": {
         "badge": "Service Overview",
         "headline": "Full-Stack Engineering, From Strategy to Operation",
         "body": [
-          "RCS Arabia's Software & Cloud Engineering practice covers every stage of the application lifecycle: design, development, quality assurance, modernisation, cloud infrastructure and ongoing advisory.",
+          "We build software the way an operations team would want to inherit it: documented, tested, monitored and supportable from day one. Engineering is delivered through our partner network in the US, India and Pakistan, with solution leadership and client management in Riyadh. When a build goes live, it can move straight into our managed services under one SLA, with no hand-off gap between the team that built it and the team that runs it.",
           "We build web and mobile applications, bespoke business software and control-system software. We modernise legacy systems with API-first architectures and run your cloud workloads day to day — covering provisioning, cost control and security baselines."
         ]
       },
@@ -725,30 +774,47 @@
         "eyebrow": "Get Started",
         "headline": "Ready to Build or Modernise?",
         "subheadline": "Talk to our engineering team about your project. Email us at info@rcsarabia.sa."
+      },
+      "attribution": {
+        "note": "How we deliver:",
+        "items": [
+          {
+            "value": "Build-to-run",
+            "label": "under one contract"
+          },
+          {
+            "value": "3 countries",
+            "label": "delivery arms in the US, India and Pakistan"
+          },
+          {
+            "value": "In-Kingdom",
+            "label": "hosting options for data residency"
+          }
+        ]
       }
     },
     "ict_low_current_systems": {
       "meta": {
         "title": "ICT & Low Current Systems in Saudi Arabia | RCS Arabia",
-        "description": "Networks, server rooms, ELV and low current systems designed, installed, tested and handed over by one team in Saudi Arabia. RCS Arabia delivers connected, resilient environments."
+        "description": "Networks, server rooms, ELV, security and low current systems designed, installed, tested and maintained by one team in Saudi Arabia. RCS Arabia delivers connected, secure environments."
       },
       "hero": {
         "eyebrow": "ICT & Low Current Systems",
-        "headline": "Connected, Resilient Environments — From Server Room to Field",
-        "subheadline": "One team designs, installs, tests and hands over your ICT infrastructure, low current systems and digital signage anywhere in Saudi Arabia."
+        "headline": "Connected, Secure Buildings — From Server Room to Field",
+        "subheadline": "One team designs, installs, tests, maintains and hands over your ICT infrastructure, security and low current systems anywhere in Saudi Arabia."
       },
       "overview": {
         "badge": "Service Overview",
         "headline": "End-to-End ICT and Low Current Delivery",
         "body": [
-          "RCS Arabia delivers structured networks, server rooms and data infrastructure designed for resilience, alongside integrated meeting rooms, video walls, conferencing and display systems — all tailored to each space.",
+          "We design, install, test and maintain the ICT and low current (ELV) systems inside every building, including networks, cabling, security, surveillance, audio visual and building systems, and we keep them running afterwards. Our leadership built a low current and physical security business line from the ground up. It delivered smart gates and CCTV for ports and border crossings, ELV and HCIS-compliant security for giga-projects, and branch and ATM surveillance for banks. Because the same team operates what it installs, every design is built to be maintained.",
           "From technical drawings and BIM coordination before cabling begins, through installation and project management, to acceptance testing, user training and complete documentation at handover — one team sees every stage through."
         ]
       },
       "services": {
         "badge": "Our Services",
         "headline": "What We Deliver",
-        "subheadline": "Six services that cover every stage, from design and coordination to testing and handover."
+        "subheadline": "Ten services that cover design, delivery, security systems, operations and handover."
       },
       "useCases": {
         "badge": "Use Cases",
@@ -798,6 +864,23 @@
         "eyebrow": "Get Started",
         "headline": "Planning an ICT or Low Current Project?",
         "subheadline": "Talk to our project delivery team. Email us at info@rcsarabia.sa."
+      },
+      "attribution": {
+        "note": "Programmes led by our leadership team have:",
+        "items": [
+          {
+            "value": "USD 30M+",
+            "label": "in physical and digital security business built"
+          },
+          {
+            "value": "Ports and border crossings",
+            "label": "smart gates and CCTV delivered"
+          },
+          {
+            "value": "Giga-projects",
+            "label": "ELV and HCIS-compliant security delivered"
+          }
+        ]
       }
     },
     "managed_services": {
@@ -814,8 +897,8 @@
         "badge": "Service Overview",
         "headline": "End-to-End IT Operations as a Service",
         "body": [
-          "Seven service categories work under clear SLAs, with 24/7 support, one accountable team and predictable costs. We run your service desk, infrastructure, monitoring, applications and industry-specific platforms so your team can focus on the business.",
-          "Our engagement models range from dedicated on-site teams to shared remote operations and hybrid arrangements — with per-user, per-device and all-inclusive pricing to match your needs."
+          "We take full operational ownership of your IT, from the service desk to the data center, and run it to agreed service levels for a predictable monthly fee. Our leadership has run this model for Saudi banks, ministries, telecom operators and healthcare providers since 2001, with 340+ engineers across 30+ cities. Every engagement follows ITIL v4 processes, a tiered L1/L2/L3 delivery model and a governance cadence that runs from monthly delivery reviews to a yearly executive steering committee.",
+          "Our engagement models range from dedicated on-site teams to shared remote operations and hybrid arrangements, so the service fits the way your organisation works."
         ]
       },
       "services": {
@@ -837,8 +920,8 @@
             "description": "End-user, clinical-device and hospital information system support so critical care environments run around the clock without IT interruptions."
           },
           {
-            "title": "ELV and Physical Security Systems — Project References",
-            "description": "RCS Arabia has delivered ELV and security systems at project sites including Neom Oxagon North East Reservoir (integrated ELV and security), Neom Oxagon Water Innovation Center (HCIS ELV and integrated security), Serafi Mall Jeddah (CCTV and data network), IMC Hospital Jeddah (structured cabling), Security Forces Medical City Riyadh (integrated ICT systems), and hotel projects in Dubai including Palm Jumeirah Hotel, Premier INN Hotel Al Barsha and Dragon City Hotel (structured cabling, CCTV, data network and access control)."
+            "title": "ELV and Low Current Maintenance",
+            "description": "Preventive and corrective maintenance for installed ELV and low current systems is delivered through our ICT & Low Current Systems pillar, so IT and building systems have one partner."
           },
           {
             "title": "Telecom Site Field Operations",
@@ -853,10 +936,30 @@
       "attribution": {
         "note": "Programmes led by our leadership team have:",
         "items": [
-          { "value": "20% cost reduction", "label": "against the staffing model" },
-          { "value": "Above 90% CSAT", "label": "customer satisfaction" },
-          { "value": "65% first-call resolution", "label": "incidents resolved on first contact" },
-          { "value": "35% fewer tickets", "label": "through automation and self-service" }
+          {
+            "value": "20% cost reduction",
+            "label": "against the staffing model"
+          },
+          {
+            "value": "Above 90% CSAT",
+            "label": "customer satisfaction"
+          },
+          {
+            "value": "65% first-call resolution",
+            "label": "incidents resolved on first contact"
+          },
+          {
+            "value": "35% fewer tickets",
+            "label": "through automation and self-service"
+          },
+          {
+            "value": "~70% of calls",
+            "label": "resolved at the service desk or by remote support"
+          },
+          {
+            "value": "Up to 30%",
+            "label": "manpower efficiency over the contract through automation"
+          }
         ]
       },
       "related": {
@@ -884,7 +987,7 @@
         "badge": "Service Overview",
         "headline": "Managed Cybersecurity Across Your Full Attack Surface",
         "body": [
-          "RCS Arabia's cybersecurity practice runs continuous protection across on-premise and cloud environments. Our SOC analysts investigate, contain and report threats before they become breaches, supported by SIEM management, threat intelligence and incident response.",
+          "We run your security operations day to day: watching, patching, hardening and testing, so threats are found and closed before they become incidents. Our services are built around SAMA, NCA ECC and CST requirements, with evidence and reporting ready for audit. Our leadership has delivered 24/7 security monitoring for healthcare and end-to-end vulnerability management for one of the Kingdom's largest financial institutions.",
           "We also run vulnerability management with hands-on remediation, firewall and network security operations, endpoint protection, identity and privileged access, and application security testing — all under clear SLAs and with full reporting transparency."
         ]
       },
@@ -908,7 +1011,7 @@
           },
           {
             "title": "Supporting Regulatory and Audit Requirements",
-            "description": "Security operations and documentation aligned to support your regulatory and audit requirements across banking, healthcare and government sectors."
+            "description": "Security operations and documentation built around SAMA, NCA ECC and CST requirements, with evidence and reporting ready for audit across banking, healthcare and government sectors."
           },
           {
             "title": "Securing the Development Lifecycle",
@@ -919,8 +1022,18 @@
       "attribution": {
         "note": "Programmes led by our leadership team have:",
         "items": [
-          { "value": "80%", "label": "of critical and high vulnerabilities closed" },
-          { "value": "About 40%", "label": "lower application security spend" }
+          {
+            "value": "80%",
+            "label": "of open critical, high and medium vulnerabilities closed"
+          },
+          {
+            "value": "About 40%",
+            "label": "lower application security spend (tools and manpower)"
+          },
+          {
+            "value": "24/7",
+            "label": "monitoring of APT feeds and behavioural analytics, integrating on-premise and cloud"
+          }
         ]
       },
       "related": {
@@ -936,253 +1049,412 @@
     }
   },
   "catalog": {
+    "forward_deployed_ai_engineering": {
+      "title": "Forward Deployed AI Engineering",
+      "description": "Embedded engineers who work inside your business for a defined sprint: discovery of high-value use cases, rapid prototyping on your data, production hardening, integration and handover with KPIs.",
+      "detail": {
+        "body": [
+          "You pay for outcomes that reach production, not slideware."
+        ]
+      }
+    },
     "genai_solutions": {
-      "title": "GenAI Solutions",
-      "description": "AI-powered solutions that improve operational efficiency and support your people. We design, prototype and deploy generative AI, including agents that automate repetitive work with human oversight kept in place."
+      "title": "GenAI Solutions & AI Agents",
+      "description": "Generative AI assistants and agents that automate repetitive work, such as document processing, email triage, customer and employee self-service and report drafting, with human approval kept in every critical step.",
+      "detail": {
+        "body": [
+          "Arabic and English, deployed on cloud or in-Kingdom infrastructure to meet data residency rules."
+        ]
+      }
+    },
+    "intelligent_automation_it_operations": {
+      "title": "Intelligent Automation for IT Operations",
+      "description": "AIOps, ticket auto-classification, self-heal scripts, chat-based service desks and RPA bots that apply AI where our heritage lies: running IT.",
+      "detail": {
+        "body": [
+          "This is the fastest route to measurable savings on an existing managed service."
+        ]
+      }
     },
     "data_analytics": {
       "title": "Data & Analytics",
-      "description": "From data pipelines to predictive analytics, we turn your data into intelligence. Your teams get dependable data foundations and clear, business-ready insight for better decisions."
+      "description": "Data pipelines, data warehouses, BI dashboards and predictive analytics that turn operational data into decisions.",
+      "detail": {
+        "body": [
+          "We build dependable data foundations first: quality, governance and PDPL-aligned access control."
+        ]
+      }
     },
     "web_mobile_custom_software": {
       "title": "Web, Mobile & Custom Software Development",
-      "description": "Web and mobile applications, bespoke business software and control-system software, built across multiple technologies including native mobile. Each is designed around your users and integrated with the systems you already run."
+      "description": "Web portals, native and cross-platform mobile apps, line-of-business systems and control-system software, designed around users and integrated with your ERP, core banking or HIS through documented APIs."
     },
     "ui_ux_design": {
       "title": "UI/UX Design",
-      "description": "User-focused design that goes beyond surface aesthetics. We shape journeys and interfaces so your applications are easy to learn and a pleasure to use."
+      "description": "Research-led journeys and interfaces, in Arabic (right-to-left) and English, tested with real users so applications are easy to learn and accessible."
     },
     "quality_assurance": {
       "title": "Quality Assurance",
-      "description": "Testing from early development through final deployment. Defects are found early, and releases go live with confidence."
+      "description": "Functional, regression, performance, security and user-acceptance testing from the first sprint, with automated test suites that keep releases fast and safe."
     },
     "modernization_integration": {
       "title": "Modernisation & Integration",
-      "description": "We bring legacy systems forward with API-first architectures, microservices and integration. Old and new platforms work together without disrupting the business."
+      "description": "Legacy applications moved forward using API-first architectures, microservices and integration platforms, phased so the business keeps running throughout.",
+      "detail": {
+        "body": [
+          "Includes migration of on-premise workloads and decommissioning plans for retired platforms."
+        ]
+      }
     },
     "cloud_devops_hybrid_cloud": {
       "title": "Cloud, DevOps & Hybrid Cloud Operations",
-      "description": "Deployment pipelines, resilient infrastructure and comprehensive monitoring for production-grade reliability. We also run your public, private and hybrid cloud workloads day to day, covering provisioning, cost control and security baselines."
+      "description": "Landing zones, CI/CD pipelines, infrastructure as code and day-two operations across public, private and hybrid cloud, including in-Kingdom cloud regions.",
+      "detail": {
+        "body": [
+          "Run 24/7 by our operations center with cost control (FinOps) and security baselines."
+        ]
+      }
     },
     "strategic_engineering": {
       "title": "Strategic Engineering",
-      "description": "Consulting, advisory and validation alongside implementation. You get long-term technical guidance from strategy through to delivery."
+      "description": "Architecture reviews, technology roadmaps, capability maturity assessments and independent validation, so leadership decisions rest on engineering evidence.",
+      "detail": {
+        "proof": "Capability maturity assessment delivered for a leading Saudi petrochemical company."
+      }
     },
     "smart_workspace_management": {
       "title": "Smart Workspace Management",
-      "description": "Room and desk booking, visitor management and utilisation analytics in one platform. You manage your workspace and see how it is really used."
+      "description": "Room and desk booking, visitor management, digital signage and utilisation analytics on one platform.",
+      "detail": {
+        "body": [
+          "Connects to access control and AV, and is supported by our ICT and managed services teams."
+        ]
+      }
     },
     "ict_infrastructure": {
       "title": "ICT Infrastructure",
-      "description": "Structured networks, server rooms and data infrastructure designed for resilience. We plan, build and connect the foundations your business systems depend on."
+      "description": "Structured cabling (copper and fiber), active networks, wireless, server rooms and data center fit-out, designed for resilience and documented for the team that will run it.",
+      "detail": {
+        "body": [
+          "We cover campus backbones, branch networks and outdoor sites such as border crossings, with cabling certified and tested to standard."
+        ],
+        "included": [
+          "Structured cabling and fiber",
+          "LAN/WLAN and network switching",
+          "Server room and MDF/IDF build",
+          "UPS and racks",
+          "Outside-plant and civil works for cabling routes"
+        ],
+        "proof": "Cabling for a border crossing and for a national bank's branches; structured cabling for IMC Hospital, Jeddah."
+      }
     },
     "audio_visual_systems": {
       "title": "Audio Visual Systems",
-      "description": "Integrated meeting rooms, video walls, conferencing and display systems, tailored to each space so teams can meet, present and collaborate with confidence."
+      "description": "Meeting rooms, boardrooms, auditoriums, video walls and command-room displays, with conferencing, discussion and voting systems and room control.",
+      "detail": {
+        "body": [
+          "Each space is designed around how people actually meet, with one-touch control and support after handover."
+        ],
+        "included": [
+          "Video conferencing and unified communications",
+          "Video walls",
+          "Boardroom discussion and voting",
+          "Meeting room booking",
+          "PA and background music"
+        ]
+      }
     },
     "digital_signage": {
       "title": "Digital Signage",
-      "description": "Centrally managed content networks with scheduling, zoning and live data feeds, so the right message reaches the right screen at the right time."
+      "description": "Centrally managed screen networks for branches, hospitals, malls and hotels, with scheduling, zoning, queue integration and live data feeds, so the right message reaches the right screen at the right time."
+    },
+    "security_surveillance_systems": {
+      "title": "Security & Surveillance Systems",
+      "description": "IP CCTV and video management, access control, intrusion detection, perimeter protection, ANPR, visitor management and AI video analytics, integrated into one platform.",
+      "detail": {
+        "body": [
+          "Programmes led by our leadership team have delivered IP CCTV upgrades for branch and ATM networks, port surveillance and smart gates, and HCIS-compliant security for giga-projects."
+        ],
+        "included": [
+          "CCTV and VMS",
+          "Thermal cameras",
+          "Access control and visitor management",
+          "Intrusion and perimeter detection",
+          "ANPR and vehicle gates",
+          "AI video analytics",
+          "Under-vehicle scanning and smart gates"
+        ],
+        "proof": "Smart gate solutions and civil works for the Jeddah port and the Al Batha border crossing; port CCTV; NEOM Oxagon integrated security; Serafi Mall CCTV."
+      }
+    },
+    "command_control_centers": {
+      "title": "Command & Control Centers",
+      "description": "Security operations rooms and integrated command centers that bring CCTV, access, alarms, fire and building systems onto one screen with PSIM, incident workflows and video walls.",
+      "detail": {
+        "body": [
+          "We design the room, integrate the systems and can staff and run it."
+        ]
+      }
+    },
+    "fire_life_safety": {
+      "title": "Fire & Life Safety (ELV)",
+      "description": "Fire alarm and detection, smart fire-alarm transmission to the civil defense, public address and voice evacuation, and emergency lighting monitoring, designed to Saudi Building Code and civil defense requirements."
+    },
+    "low_current_operations_maintenance": {
+      "title": "Low Current Operations & Maintenance",
+      "description": "Preventive and corrective maintenance contracts for installed ELV systems, with SLA response, health monitoring and yearly compliance testing.",
+      "detail": {
+        "body": [
+          "This is where our managed services experience gives clients a single partner for both IT and building systems."
+        ]
+      }
     },
     "design_bim_coordination": {
       "title": "Design & BIM Coordination",
-      "description": "Technical drawings, BIM coordination and equipment scheduling completed before cabling begins, so installation runs to plan."
+      "description": "Shop drawings, BIM coordination, riser and containment design and equipment schedules, agreed with consultants before cabling begins, so installation runs to plan and compliance reviews pass first time."
     },
     "installation_project_delivery": {
       "title": "Installation & Project Delivery",
-      "description": "Installation and project management by engineers who oversee every stage of site delivery."
+      "description": "Site delivery by project managers and engineers who own every stage, from mobilisation and material control to installation, quality checks and progress reporting to the consultant and main contractor."
     },
     "testing_commissioning_handover": {
       "title": "Testing, Commissioning & Handover",
-      "description": "Acceptance testing, user training and complete documentation before every handover."
+      "description": "Factory and site acceptance testing, cable certification, integrated system testing, user training and full as-built documentation, with a warranty and O&M plan agreed before handover."
     },
     "end_user_services": {
       "title": "End User Services",
-      "description": "Productive, supported employees on every device and at every location, with one point of contact and SLA-backed resolution from the service desk to the doorstep."
+      "description": "One point of contact for every employee, on any device, at any branch. Our teams resolve most issues remotely in minutes. Field engineers based in each region reach the rest under SLA, with field support and hardware break-fix.",
+      "detail": {
+        "proof": "200,000+ end users and 150,000+ PCs supported; one of the largest Windows 10 roll-outs in the Kingdom; a self-service portal that cut ticket volumes."
+      }
     },
     "infrastructure_managed_services": {
       "title": "Infrastructure Managed Services",
-      "description": "Always-on core IT. We run, monitor and improve your data center, network and communications platforms under clear SLAs, so your team can focus on the business."
+      "description": "We run, patch, back up and improve the platforms your business depends on, in your data center, at DR and in the cloud, under a single SLA.",
+      "detail": {
+        "proof": "104+ L3 specialists across 20 skills (Exchange/AD, Oracle, storage, DR, System Center and more) on one banking programme."
+      }
     },
     "monitoring_operations_centers": {
       "title": "Monitoring & Operations Centers",
-      "description": "Eyes on your IT estate 24/7/365. Centralised monitoring, fast detection and coordinated response covering on-premise, cloud and SaaS."
+      "description": "A single center that watches everything, owns every incident end to end and coordinates every resolver group, so problems are fixed before users notice.",
+      "detail": {
+        "proof": "NOC operating model designed for a bank with 300+ branches and 2,700+ ATMs; command-center monitoring with ML-based detection for a leading healthcare provider."
+      }
     },
     "application_managed_services": {
       "title": "Application Managed Services",
-      "description": "Business applications that stay available and perform, backed by L1/L2 support, monitoring and vendor coordination."
+      "description": "Business applications that stay available and perform, backed by L1/L2 support, monitoring and vendor coordination.",
+      "detail": {
+        "proof": "100+ applications supported, including 250 at a single investment bank."
+      }
     },
     "industry_specialized_services": {
       "title": "Industry & Specialised Services",
-      "description": "Managed services built around the specialist equipment and operating realities of banking, healthcare, government, telecom and facilities."
+      "description": "Managed services built around the specialist equipment and operating realities of banking, healthcare, government, telecom and facilities.",
+      "detail": {
+        "proof": "5,200+ ATMs, 55,000+ POS terminals and 6,500+ telecom sites under support."
+      }
     },
     "as_a_service_offerings": {
       "title": "As-a-Service Offerings",
-      "description": "IT as a predictable monthly service. You pay for outcomes and usage, with no upfront capital cost."
+      "description": "IT as a predictable monthly service. You pay for outcomes and usage, with no upfront capital cost.",
+      "detail": {
+        "body": [
+          "Delivery models: dedicated onsite, shared offsite or hybrid."
+        ]
+      }
     },
     "service_management_transformation": {
       "title": "Service Management & Transformation",
-      "description": "The framework that makes every service measurable and keeps it improving — from a risk-managed takeover to automation and continual improvement."
+      "description": "We take over your operation without disruption, then make it measurably better every quarter.",
+      "detail": {
+        "proof": "ITSM delivered for a government ministry and a regional beverages manufacturer; 15% yearly incident-reduction target built into our largest contract."
+      }
     },
     "security_operations_center": {
       "title": "Security Operations Center (SOC)",
-      "description": "24/7 security monitoring, SIEM management, threat intelligence and incident response across on-premise and cloud. Analysts investigate, contain and report, so threats are handled before they become breaches."
+      "description": "24/7 monitoring, SIEM management, threat intelligence and incident response across on-premise, cloud and SaaS.",
+      "detail": {
+        "body": [
+          "We start with an assessment of your landscape, onboard every log source, tune use cases to your risks and provide onsite remediation support when incidents need hands on keyboards."
+        ],
+        "proof": "Unmonitored detection tools brought under 24/7 watch and the open incident backlog cleared for a major healthcare provider."
+      }
     },
     "vulnerability_management_remediation": {
       "title": "Vulnerability Management & Remediation",
-      "description": "Continuous scanning, risk-based prioritisation and hands-on remediation of critical and high vulnerabilities across networks, servers and applications. Our approach cuts open vulnerabilities in measurable steps and keeps you audit-ready."
+      "description": "Continuous scanning, risk-based prioritisation and hands-on remediation for networks, servers and applications.",
+      "detail": {
+        "body": [
+          "We do not just report findings; our engineers fix them to deadline and track every item to closure."
+        ],
+        "tools": [
+          "Rapid7 InsightVM",
+          "Qualys",
+          "Nessus",
+          "Metasploit"
+        ]
+      }
     },
     "managed_firewall_network_security": {
       "title": "Managed Firewall & Network Security",
-      "description": "Policy management, rule reviews, IPS and secure web/email gateway operations for next-generation firewalls. Your perimeter and internal segments stay controlled and documented."
+      "description": "Policy management, rule-base reviews, IPS, sandboxing, and secure web and email gateway operations for next-generation firewalls, with change control and monthly posture reporting."
     },
     "endpoint_security_management": {
       "title": "Endpoint Security Management",
-      "description": "Operation of antivirus/EDR, data loss prevention, encryption and device control across all endpoints. Policies are enforced consistently and threats are contained at the device."
+      "description": "Operation of antivirus/EDR, DLP, encryption and device control across every endpoint, linked to patch management so exposure windows stay short."
     },
     "identity_privileged_access_operations": {
       "title": "Identity & Privileged Access Operations",
-      "description": "Day-to-day administration of identity, multi-factor authentication and privileged access management (PAM) platforms. The right people get the right access, and every privileged session is controlled and recorded."
+      "description": "Daily administration of directory, MFA and privileged access management (PAM), with privileged sessions vaulted, controlled and recorded."
     },
     "application_security_testing": {
       "title": "Application Security Testing",
-      "description": "Penetration testing, static and dynamic application testing (SAST/DAST) and API testing built into the development lifecycle. Security flaws are found and fixed before go-live."
+      "description": "Penetration testing, SAST, DAST and API testing built into each stage of the SDLC, plus remediation consulting so developers fix the root cause.",
+      "detail": {
+        "tools": [
+          "Checkmarx (SAST)",
+          "Burp Suite and AppSpider (DAST)",
+          "SoapUI Pro and Postman (API)"
+        ]
+      }
     },
     "enterprise_service_desk": {
-      "title": "Enterprise Service Desk",
-      "description": "A 24/7 bilingual (Arabic/English) single point of contact for all IT incidents and requests, by phone, email, portal and chat. ITIL-aligned processes, a growing knowledge base and first-call resolution targets get users back to work quickly."
+      "title": "24/7 Service Desk",
+      "description": "Arabic and English single point of contact; incident, request and access management on your ITSM tool."
     },
     "deskside_onsite_support": {
-      "title": "Deskside & On-site Support",
-      "description": "Dedicated engineers at your head office, branches and sites for hands-on fixes, VIP support, new-joiner setup and walk-in IT help. They are sized to your user base and measured against agreed response and resolution SLAs."
+      "title": "VIP & Deskside Support",
+      "description": "Dedicated onsite engineers for executives, head office and critical floors."
     },
-    "field_support_hardware_break_fix": {
-      "title": "Field Support & Hardware Break-Fix",
-      "description": "Kingdom-wide field engineers and field support keep desktops, laptops, printers and branch devices running. Dispatch is tracked end to end, with SLA-backed response and resolution."
+    "field_branch_support": {
+      "title": "Field & Branch Support",
+      "description": "Regional engineers covering branches, remote sites and kiosks Kingdom-wide."
     },
-    "remote_support_software_distribution": {
-      "title": "Remote Support & Software Distribution",
-      "description": "Engineers resolve issues remotely and push applications, updates and configurations centrally. Most tickets close without a site visit, which cuts downtime and cost."
+    "hardware_break_fix_depot_repair": {
+      "title": "Hardware Break-fix & Depot Repair",
+      "description": "Parts replacement, depot repair and OEM coordination for desktops, laptops, printers and branch devices."
     },
     "imac_services": {
-      "title": "IMAC Services",
-      "description": "Planned installs, moves, adds and changes for users and devices, from single desks to office relocations and mass rollouts. Every change is scheduled, documented and reflected in your asset records."
-    },
-    "endpoint_patch_management": {
-      "title": "Endpoint & Patch Management",
-      "description": "Endpoints stay compliant and secure through regular OS and application patching, imaging and configuration baselines. Deployments are tested and scheduled, with compliance reports for audit and regulators."
-    },
-    "it_asset_device_lifecycle_management": {
-      "title": "IT Asset & Device Lifecycle Management",
-      "description": "Full lifecycle control of hardware and software, from procurement and tagging to deployment, tracking, refresh and secure disposal. You get clear visibility of ownership, cost and licence position."
-    },
-    "managed_print_services": {
-      "title": "Managed Print Services",
-      "description": "Centralised support, monitoring and consumables management for printers and multifunction devices across all sites, with per-page or per-device subscription pricing if you prefer. It reduces print downtime and gives you control over print cost."
+      "title": "IMAC, Refresh & Mass Roll-out",
+      "description": "Moves, adds and changes; PC and laptop refresh; OS migrations at scale."
     },
     "vdi_support": {
       "title": "Virtual Desktop (VDI) Support",
-      "description": "Day-to-day operation of virtual desktop and published-app environments, covering user access, images, performance and capacity. Users get a consistent desktop from any location."
+      "description": "Operation of VDI platforms and thin-client estates."
     },
-    "server_virtualization_data_center_management": {
-      "title": "Server, Virtualisation & Data Center Management",
-      "description": "Administration of Windows, Linux, VMware and hyper-converged environments, covering health checks, capacity, patching, hardening and change control. We keep your on-premise and co-located infrastructure stable, secure and ready to grow."
+    "data_center_server_management": {
+      "title": "Data Center & Server Management",
+      "description": "Windows, Linux and virtualised server operations, HCI and converged platforms."
+    },
+    "network_communications": {
+      "title": "Network & Communications",
+      "description": "LAN, WAN, wireless, branch and ATM communications, load balancers."
     },
     "storage_backup_recovery": {
-      "title": "Storage, Backup & Recovery",
-      "description": "Management of SAN/NAS storage, backup schedules, archiving and restore testing. Your data is protected, recoverable and retained to policy, with regular reports proving it."
-    },
-    "network_management": {
-      "title": "Network Management",
-      "description": "Operation of LAN, WAN, wireless, VPN, load balancers and links, including configuration, performance and bandwidth monitoring, and carrier coordination. Branches and sites stay connected, and faults are found before users notice."
-    },
-    "unified_communications_telephony": {
-      "title": "Unified Communications & Telephony",
-      "description": "Support for IP telephony, conferencing, contact center platforms and collaboration rooms. We keep calls, meetings and customer lines working across every location."
+      "title": "Storage & Backup",
+      "description": "Storage administration, backup and restore, archiving and media management."
     },
     "database_administration": {
       "title": "Database Administration",
-      "description": "Monitoring, tuning, backup, patching and security for SQL Server, Oracle and other enterprise databases. Business data stays fast, available and protected."
+      "description": "Oracle and SQL Server DBA, performance tuning, data-warehouse support."
     },
-    "dr_site_operations": {
-      "title": "DR Site Operations",
-      "description": "Operation of your disaster recovery site, replication and failover runbooks, with scheduled DR drills and reports. When it matters, critical services can be restored within agreed recovery targets."
+    "patch_software_deployment": {
+      "title": "Patch & Software Deployment",
+      "description": "Production patch cycles, electronic software distribution, image management."
     },
-    "data_center_facility_support": {
-      "title": "Data Center Facility Support",
-      "description": "Monitoring and maintenance coordination for UPS, power, cooling and environmental systems in server rooms and data centers. Facility issues are caught before they become outages."
+    "dr_business_continuity_operations": {
+      "title": "DR & Business Continuity Operations",
+      "description": "DR site support, DR drills and the yearly BCP report."
     },
     "network_operations_center": {
-      "title": "Network Operations Center (NOC)",
-      "description": "Round-the-clock monitoring of networks, servers, links and critical services from our operations center or yours. Alerts are triaged, first-level fixes are applied using SOPs, and major incidents are escalated and managed to closure."
+      "title": "24/7 Network Operations Center (NOC)",
+      "description": "Event, incident, problem and change management for HO, DR, branches and ATMs."
     },
-    "enterprise_monitoring_aiops_command_center": {
-      "title": "Enterprise Monitoring & AIOps Command Center",
-      "description": "One integrated command center for infrastructure, application and database monitoring, event correlation and capacity insight. AI-assisted detection and analytics cut alert noise and spot problems early."
+    "integrated_command_center": {
+      "title": "Integrated Command Center",
+      "description": "One point of ownership across infrastructure, applications and third parties."
     },
-    "enterprise_platform_support": {
-      "title": "Enterprise Platform Support",
-      "description": "Administration and support for Active Directory, Microsoft 365/Exchange, SharePoint, Teams and IP telephony platforms. The shared services every employee relies on stay healthy, secure and up to date."
+    "aiops_event_management": {
+      "title": "AIOps & Event Management",
+      "description": "Infrastructure, network, database and application performance monitoring with AI-based alerting."
     },
-    "line_of_business_application_support": {
-      "title": "Line-of-Business Application Support",
-      "description": "L1/L2 support for ERP, CRM, HR and sector systems such as hospital and student information systems. This covers user issues, configuration, job monitoring, and escalation to vendors with full ownership of the ticket."
+    "remote_management_center": {
+      "title": "Remote Management Center",
+      "description": "Shared 24/7 remote monitoring and proactive management for mid-size clients."
     },
-    "application_monitoring_operations": {
-      "title": "Application Monitoring & Operations",
-      "description": "Performance and availability monitoring for critical applications, with routine operational tasks, health checks and release support. Slowdowns and failures are spotted and resolved before they affect customers."
+    "l1_l2_application_support": {
+      "title": "L1/L2 Application Support",
+      "description": "Monitoring, incident handling and SOP tasks for core business applications."
+    },
+    "enterprise_application_administration": {
+      "title": "Enterprise Application Administration",
+      "description": "Oracle, Microsoft and line-of-business platforms."
+    },
+    "messaging_identity_collaboration": {
+      "title": "Messaging, Identity & Collaboration",
+      "description": "Exchange, Active Directory, Microsoft 365, unified communications, video conferencing."
+    },
+    "application_performance_vendor_management": {
+      "title": "Application Performance & Vendor Management",
+      "description": "APM, release coordination and OEM/vendor escalation."
     },
     "banking_branch_atm_services": {
-      "title": "Banking Branch & ATM Services",
-      "description": "24/7 support for branch IT and self-service channels, covering ATM communications, first-line maintenance, POS terminals, queuing systems, biometrics, PIN pads and card printers. All of it runs under SLA-backed support for branch and ATM environments."
+      "title": "Banking Branch & Self-Service Channels",
+      "description": "ATM, CRM, POS and cash-box support; queuing systems; remittance centers."
+    },
+    "card_printing_emv_branch_devices": {
+      "title": "Card Printing, EMV & Branch Devices",
+      "description": "Instant card-printing machines, PED, cheque scanners, teller printers."
+    },
+    "telecom_site_field_services": {
+      "title": "Telecom Field Maintenance (FLM)",
+      "description": "Corrective and preventive maintenance, new installations and passive cabling for microwave, fiber, 4G/5G and LTE sites."
     },
     "healthcare_it_support": {
       "title": "Healthcare IT Support",
-      "description": "End-user, clinical-device and hospital information system (HIS) support for hospitals and clinics. Critical care environments run around the clock without IT interruptions."
+      "description": "End-user, clinical-device and hospital information system support."
     },
-    "elv_physical_security_systems": {
-      "title": "ELV & Physical Security Systems",
-      "description": "We design, install and maintain CCTV, thermal cameras, access control, alarm, structured cabling and other low-voltage systems under one team. Preventive and corrective support, with central monitoring, keeps your security systems recording, alerting and working when needed."
+    "government_facilities_om": {
+      "title": "Government & Facilities O&M",
+      "description": "Ministry and authority IT operations; smart gates, building, parking, power and water systems with IoT asset monitoring."
     },
-    "building_facility_systems": {
-      "title": "Building & Facility Systems",
-      "description": "Operation and maintenance support for building management, parking, electricity and water management systems, plus IoT-based asset monitoring. Facilities run efficiently and faults are flagged in real time."
+    "managed_staffing": {
+      "title": "Managed Staffing",
+      "description": "Skilled onsite professionals, managed under SLA rather than as headcount."
     },
-    "telecom_site_field_services": {
-      "title": "Telecom Site Field Services",
-      "description": "Corrective and preventive maintenance, new installations and passive cabling for microwave, fiber, 4G/5G and LTE sites. Kingdom-wide field support covers thousands of sites across the Kingdom."
+    "shared_service_desk": {
+      "title": "Shared Service Desk",
+      "description": "Multi-client 24/7 desk from our center, priced per user."
     },
     "device_as_a_service": {
-      "title": "Device as a Service",
-      "description": "Laptops, desktops and peripherals supplied, supported and refreshed for a fixed monthly fee per device or user. Rental, lease and buy-back options are available. Hardware never ages beyond its useful life."
+      "title": "Device-as-a-Service",
+      "description": "PCs and peripherals on lease, with or without buy-back, including support."
     },
-    "workspace_as_a_service": {
-      "title": "Workspace as a Service",
-      "description": "A complete employee workspace in one subscription: device, virtual desktop, collaboration tools, security and support. New joiners are productive from day one."
+    "noc_as_a_service": {
+      "title": "NOC-as-a-Service",
+      "description": "Shared monitoring and first response without building your own center."
     },
-    "shared_support_center": {
-      "title": "Shared Support Center",
-      "description": "A multi-customer support center for SMEs and branch networks, reachable by phone, chat, email and portal, with field dispatch when needed. You get enterprise-grade support without a dedicated team's cost."
+    "pay_per_use_support": {
+      "title": "Pay-per-Use Support",
+      "description": "Billing per ticket, per device or per user, for variable demand."
     },
-    "professional_services_on_demand": {
-      "title": "Professional Services On-Demand",
-      "description": "Certified engineers and specialists booked by the man-day, hour or project for rollouts, migrations, upgrades and short-term needs. It flexes with your workload, with no long-term commitment."
+    "transition_takeover": {
+      "title": "Transition & Takeover",
+      "description": "Due diligence, SLA baselining, knowledge transfer and zero-disruption cut-over in about 90 days."
     },
-    "service_transition": {
-      "title": "Service Transition",
-      "description": "A structured takeover from your current team or provider. It runs from due diligence and knowledge transfer through shadow support and primary support to steady state, typically within three months and without disrupting the business."
+    "itsm_implementation": {
+      "title": "ITSM Implementation",
+      "description": "Design and roll-out of ITSM platforms (e.g. BMC Remedy) and ITIL v4 processes."
     },
-    "itsm_governance": {
-      "title": "ITSM & Governance",
-      "description": "ITIL v4-aligned incident, problem, change and request management with a three-tier governance model: operational, tactical and executive reviews. You get SLA dashboards, risk registers and full transparency."
+    "governance_sla_reporting": {
+      "title": "Governance, SLA & Reporting",
+      "description": "RACI, tiered governance (monthly, quarterly, yearly) and dashboards linking IT KPIs to business KPIs."
     },
-    "automation_self_service": {
-      "title": "Automation & Self-Service",
-      "description": "Self-service portals, chatbots, self-healing scripts, RPA and endpoint analytics shift routine work left. Ticket volumes and resolution times fall, and the user experience improves."
-    },
-    "continual_service_improvement": {
-      "title": "Continual Service Improvement",
-      "description": "A standing improvement programme that uses problem management, knowledge-base building, Six Sigma and CSAT/NPS feedback. Services get better and cheaper every year of the contract."
+    "continual_improvement_automation": {
+      "title": "Continual Improvement & Automation",
+      "description": "Our OpErA approach (Optimise, Eradicate, Automate): left-shift, RPA and bots, self-heal, known-error database."
     }
   },
   "service_page": {
@@ -1198,7 +1470,9 @@
     "detail_response_targets": "Response targets",
     "detail_reporting": "Reporting",
     "detail_compliance": "Compliance",
-    "detail_faq": "Frequently asked questions"
+    "detail_faq": "Frequently asked questions",
+    "detail_proof": "Track record",
+    "detail_proof_note": "From programmes led by our leadership team"
   },
   "privacy_policy_meta": {
     "title": "Privacy Policy | RCS Arabia",
@@ -1301,8 +1575,9 @@
       {
         "heading": "10. Contact Us",
         "body": "If you have any questions about these Terms of Service, please contact us:\n\nRCS Arabia\nBuilding 8064, Prince Abdulaziz Ibn Mussaed Ibn Jalawi Street, Al Murabba District, Riyadh 12612, Saudi Arabia\nEmail: info@rcsarabia.sa\nPhone: +966 11 229 6888"
-      }]
-    },
+      }
+    ]
+  },
   "chatbot": {
     "launcher_label": "Chat with RCS Arabia AI",
     "title": "RCS Arabia Assistant",
@@ -1419,7 +1694,7 @@
       },
       "badge": "Case Studies",
       "headline": "Case Studies and Project References",
-      "intro": "Project references from programmes led by our leadership team.",
+      "intro": "Project references from programmes led by our leadership team, shown without client names. Names and detail are shared only where the client has approved.",
       "sections": [
         {
           "heading": "Delivery programmes",
@@ -1436,7 +1711,58 @@
         "button": "Request references",
         "subject": "Case study and reference request",
         "email": "info@rcsarabia.sa"
-      }
+      },
+      "labels": {
+        "attribution": "Programmes led by our leadership team",
+        "since": "Client since",
+        "scale": "Scale",
+        "ran": "What we ran",
+        "results": "Results"
+      },
+      "studies": [
+        {
+          "client": "Largest Islamic bank in the Kingdom",
+          "since": "2001 (20+ years)",
+          "scale": "13,000+ staff, 960+ branches, 240+ remittance centres, 5,200+ ATMs, 55,000+ POS terminals",
+          "ran": "Service desk, branch and ATM communications, 24/7 NOC, patching, card-printing and queuing support, VDI and field support across 20+ regions.",
+          "results": "Over 98% customer satisfaction; under 2% escalations; about 70% of incidents resolved at the service desk; 99.1% SLA compliance on 14,790 tickets in one month."
+        },
+        {
+          "client": "Leading corporate and investment bank",
+          "since": "2012 (10+ years)",
+          "scale": "3,000+ staff, 62 branches, 430 ATMs, 250 applications, 4,000 devices",
+          "ran": "Service desk, 24/7 NOC and communications, field support, patch and software deployment, and project governance.",
+          "results": "SLA consistently at or above 95%, with about 70 dedicated staff across 20+ locations."
+        },
+        {
+          "client": "Major Eastern Province healthcare provider",
+          "since": "2018",
+          "scale": "Hospital network with on-premise and cloud estate",
+          "ran": "Command-center monitoring (infrastructure, network, database, APM), AIOps and big-data analytics, and software asset management.",
+          "results": "Unmonitored tools brought under 24/7 watch, the open incident backlog cleared, and machine-learning-based alerting introduced."
+        },
+        {
+          "client": "One of the largest Saudi financial institutions",
+          "since": "2018",
+          "scale": "Enterprise network and application estate",
+          "ran": "End-to-end vulnerability management, penetration testing and secure SDLC.",
+          "results": "80% of open critical, high and medium vulnerabilities closed; about 40% lower application-security spend."
+        },
+        {
+          "client": "Global telecom vendor (national operator network)",
+          "since": "Multi-year",
+          "scale": "6,500+ sites Kingdom-wide",
+          "ran": "First-line maintenance: corrective and preventive, installations and passive cabling for microwave, fiber, 4G, 5G and LTE.",
+          "results": "Kingdom-wide field coverage under SLA."
+        },
+        {
+          "client": "National customs-clearance platform",
+          "since": "2020",
+          "scale": "Seaport and land-border sites",
+          "ran": "Smart-gate civil works, border cabling, port CCTV and onsite PC support.",
+          "results": "Delivered across multiple sites as one programme."
+        }
+      ]
     },
     "saudization": {
       "meta": {
