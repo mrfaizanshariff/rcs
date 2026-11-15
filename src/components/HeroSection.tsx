@@ -1,25 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useSyncExternalStore } from "react";
+import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowRight, MapPin } from "lucide-react";
 import { gsap } from "gsap";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import Threads from "./ui/Thread-Bg";
-
-// Logo spectrum, in the same order as --spectrum-gradient in globals.css
-const SPECTRUM = ["#D91F26", "#F18A26", "#F0C21A", "#319B50", "#00A5D8", "#0874C9"];
-
-// Threads are desktop/tablet only (md and up): no WebGL context is created on phones
-const THREADS_QUERY = "(min-width: 768px)";
-const subscribeThreads = (onChange: () => void) => {
-  const mql = window.matchMedia(THREADS_QUERY);
-  mql.addEventListener("change", onChange);
-  return () => mql.removeEventListener("change", onChange);
-};
-const getThreadsSnapshot = () => window.matchMedia(THREADS_QUERY).matches;
-const getThreadsServerSnapshot = () => false;
 
 const STATS = [
   { valueKey: "stat1_value", suffixKey: null, labelKey: "stat1_label" },
@@ -27,21 +13,22 @@ const STATS = [
   { valueKey: "stat3_value", suffixKey: "stat3_suffix", labelKey: "stat3_label" },
 ] as const;
 
+// Almost transparent glass: a faint tint and light blur so the photo stays clearly visible.
+// Text on it is always light, because the photo is dark in both themes.
+const GLASS = "bg-white/5 backdrop-blur-[3px] border border-white/20 shadow-[0_8px_32px_rgb(0_0_0/0.25)]";
+
 export default function HeroSection() {
   const t = useTranslations("hero");
-  const showThreads = useSyncExternalStore(subscribeThreads, getThreadsSnapshot, getThreadsServerSnapshot);
 
-  const headlineRef = useRef<HTMLHeadingElement>(null);
-  const introRef = useRef<HTMLDivElement>(null);
-  const mediaRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const statsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-      tl.fromTo(headlineRef.current, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7 })
-        .fromTo(introRef.current, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.4")
-        .fromTo(mediaRef.current, { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.8 }, "-=0.3");
+      tl.fromTo(cardRef.current, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8 })
+        .fromTo(statsRef.current, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7 }, "-=0.4");
     });
 
     return () => ctx.revert();
@@ -50,65 +37,42 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative pt-12 sm:pt-16 lg:pt-20 pb-16 lg:pb-24 overflow-hidden mesh-gradient"
+      className="relative isolate overflow-hidden py-12 sm:py-16 lg:py-24 lg:min-h-[44rem] flex items-center"
     >
-      {/* Animated threads in the logo spectrum, top area only, behind the headline */}
-      {showThreads && (
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 h-104 lg:h-120 mask-[linear-gradient(to_bottom,black_55%,transparent)]"
-          aria-hidden="true"
-        >
-          <Threads
-            colors={SPECTRUM}
-            lineCount={43}
-            thickness={0.6}
-            softness={1.3}
-            amplitude={1.7}
-            distance={0.2}
-            waves={1.05}
-            speed={0.6}
-            split={0.04}
-            fray={0.5}
-            angle={25}
-            taper={0.85}
-            brightness={1.4}
-            parting={0}
-            enableMouseInteraction={true}
-            fade={0}
-            opacity={1}
-          />
-        </div>
-      )}
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        {/* Headline: full width */}
+      {/* `isolate` makes the section its own stacking context, so the opaque photo paints
+          above the page-wide threads (HomeThreads, -z-10) and hides them until it scrolls away */}
+      <div className="absolute inset-0 -z-10 bg-[#071426]">
+        <Image
+          src="/hero_2.jpg"
+          alt={t("image_alt")}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[center_60%]"
+        />
+        <div className="absolute inset-0 bg-linear-to-r from-[#071426]/55 via-[#071426]/15 to-transparent rtl:bg-linear-to-l" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-background to-transparent" />
+      </div>
 
-        {/* Tagline pill */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
+        {/* Glass card with the hero copy */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-6"
-        >
-          <span className="inline-block w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
-          <span className="text-sm font-semibold text-link tracking-wide">{t("tagline")}</span>
-        </div>
-
-        <h1
-          ref={headlineRef}
+          ref={cardRef}
           style={{ opacity: 0 }}
-          className="max-w-5xl font-extrabold"
+          className={`${GLASS} rounded-3xl p-7 sm:p-10 lg:p-12 max-w-3xl`}
         >
-          {t("headline")}
-        </h1>
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card mb-6">
+            <span className="inline-block w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
+            <span className="text-sm font-semibold text-link tracking-wide">{t("tagline")}</span>
+          </div> */}
 
-        {/* Intro: supporting copy and actions */}
-        <div
-          ref={introRef}
-          style={{ opacity: 0 }}
-          className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end"
-        >
-          <p className="lg:col-span-7 max-w-2xl text-text-secondary text-base sm:text-lg leading-relaxed">
+          <h1 className="font-extrabold text-white drop-shadow-[0_2px_12px_rgb(0_0_0/0.5)]">{t("headline")}</h1>
+
+          <p className="mt-6 text-white/90 text-base sm:text-lg leading-relaxed drop-shadow-[0_1px_8px_rgb(0_0_0/0.5)]">
             {t("subheadline")}
           </p>
 
-          <div className="lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-3">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link href="/contact" className="rcs-button rcs-button-primary group rounded-full px-7">
               <span>{t("cta_primary")}</span>
               <ArrowRight
@@ -122,48 +86,35 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Photo with the stats band attached underneath */}
+        {/* Stats and location, also on glass */}
         <div
-          ref={mediaRef}
+          ref={statsRef}
           style={{ opacity: 0 }}
-          className="relative mt-12 lg:mt-16 overflow-hidden rounded-3xl border border-border bg-surface shadow-(--shadow-card-raised)"
+          className="mt-6 lg:mt-8 flex flex-col lg:flex-row lg:items-stretch gap-4"
         >
-          <hr className="spectrum-gradient-rule absolute inset-x-0 top-0 z-10" aria-hidden="true" />
-
-          <div className="relative aspect-4/3 sm:aspect-video lg:aspect-2/1 bg-surface-muted">
-            <Image
-              src="/hero_2.jpg"
-              alt={t("image_alt")}
-              fill
-              priority
-              sizes="(min-width: 1280px) 1216px, 100vw"
-              className="object-cover object-[center_70%]"
-            />
-
-            {/* Location chip: floats gently, with a pulsing status dot */}
-            <div className="absolute bottom-4 start-4 sm:bottom-6 sm:start-6 glass-card rounded-2xl px-4 py-3 flex items-center gap-3 max-w-[calc(100%-2rem)] animate-[floatSlow_6s_ease-in-out_infinite]">
-              <span className="relative flex h-2.5 w-2.5 shrink-0" aria-hidden="true">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-success" />
-              </span>
-              <MapPin className="w-4 h-4 text-link shrink-0" aria-hidden="true" />
-              <span className="text-sm font-semibold text-text-primary">{t("image_caption")}</span>
-            </div>
-          </div>
-
-          {/* Stats band */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border border-t border-border bg-surface">
+          <div
+            className={`${GLASS} flex-1 rounded-2xl grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/15`}
+          >
             {STATS.map(({ valueKey, suffixKey, labelKey }) => (
-              <div key={valueKey} className="px-6 py-5 sm:px-8 sm:py-6">
-                <p className="font-display text-2xl lg:text-3xl font-extrabold tracking-tight text-text-primary">
+              <div key={valueKey} className="px-6 py-5">
+                <p className="font-display text-2xl lg:text-3xl font-extrabold tracking-tight text-white">
                   {t(valueKey)}
-                  {suffixKey && (
-                    <span className="ms-1.5 text-lg font-bold text-link">{t(suffixKey)}</span>
-                  )}
+                  {suffixKey && <span className="ms-1.5 text-lg font-bold text-spectrum-cyan">{t(suffixKey)}</span>}
                 </p>
-                <p className="mt-0.5 text-sm text-text-secondary">{t(labelKey)}</p>
+                <p className="mt-0.5 text-sm text-white/85">{t(labelKey)}</p>
               </div>
             ))}
+          </div>
+
+          <div
+            className={`${GLASS} rounded-2xl px-5 py-4 flex items-center gap-3 lg:self-end animate-[floatSlow_6s_ease-in-out_infinite]`}
+          >
+            <span className="relative flex h-2.5 w-2.5 shrink-0" aria-hidden="true">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-success" />
+            </span>
+            <MapPin className="w-4 h-4 text-spectrum-cyan shrink-0" aria-hidden="true" />
+            <span className="text-sm font-semibold text-white">{t("image_caption")}</span>
           </div>
         </div>
       </div>
