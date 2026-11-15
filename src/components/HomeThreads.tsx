@@ -42,7 +42,7 @@ export default function HomeThreads() {
         taper={0.85}
         brightness={1.4}
         parting={0}
-        enableMouseInteraction={true}
+        enableMouseInteraction={false}
         fade={0}
         opacity={0.8}
       />

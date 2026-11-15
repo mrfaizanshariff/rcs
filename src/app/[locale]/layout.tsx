@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AmbientOrbs from "@/components/AmbientOrbs";
 import ChatWidget from "@/components/chat/ChatWidget";
+import HomeThreads from "@/components/HomeThreads";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -128,7 +129,10 @@ export default async function LocaleLayout({
 
           <AmbientOrbs />
           <Navbar />
-          <main className="relative z-10">{children}</main>
+          <main className="relative z-10">
+            <HomeThreads />
+            {children}
+          </main>
           <Footer />
           <ChatWidget />
         </NextIntlClientProvider>

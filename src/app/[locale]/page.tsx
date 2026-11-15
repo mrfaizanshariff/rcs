@@ -1,6 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/HeroSection";
-import HomeThreads from "@/components/HomeThreads";
 import TrustBar from "@/components/TrustBar";
 import AboutSection from "@/components/AboutSection";
 import SolutionsOverview from "@/components/SolutionsOverview";
@@ -21,7 +20,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <JsonLd data={organizationSchema()} />
-      <HomeThreads />
       <HeroSection />
       <TrackRecord />
       <SolutionsOverview />
