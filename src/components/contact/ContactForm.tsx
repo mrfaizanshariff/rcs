@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useActionState, useEffect, useState } from "react";
+import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
+import { sendContactMessage } from "@/app/actions";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { contactServiceFromParam } from "@/lib/contact-service";
 
@@ -69,8 +71,6 @@ const SERVICE_KEYS = [
 ] as const;
 type ServiceKey = typeof SERVICE_KEYS[number];
 
-type FormState = "idle" | "submitting" | "success";
-
 const inputClass =
   "w-full h-12 pl-10 pr-4 rtl:pl-4 rtl:pr-10 rounded-lg bg-surface-raised border border-border text-text-primary text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-brand-blue/30 focus:border-brand-blue transition-all";
 
@@ -79,9 +79,27 @@ const selectClass =
 
 const labelClass = "text-sm font-semibold text-text-primary flex items-center justify-between";
 
+function SubmitButton({ label }: { label: string }) {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="rcs-button rcs-button-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-display font-bold text-sm disabled:opacity-60 disabled:cursor-not-allowed"
+    >
+      {pending ? (
+        <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+      ) : (
+        <IconSend className="w-4 h-4" />
+      )}
+      {label}
+    </button>
+  );
+}
+
 export default function ContactForm() {
   const t = useTranslations("contact_form");
-  const [state, setState]           = useState<FormState>("idle");
+  const [result, formAction]        = useActionState(sendContactMessage, null);
   const [selected, setSelected]     = useState<Set<ServiceKey>>(new Set());
   const [fileName, setFileName]     = useState<string | null>(null);
 
@@ -104,13 +122,6 @@ export default function ContactForm() {
   function handleFile(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     setFileName(file ? file.name : null);
-  }
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setState("submitting");
-    await new Promise((r) => setTimeout(r, 900));
-    setState("success");
   }
 
   return (
@@ -145,7 +156,7 @@ export default function ContactForm() {
           </div>
 
           {/* ── Success state ── */}
-          {state === "success" ? (
+          {result?.success ? (
             <div className="relative z-10 flex flex-col items-center gap-5 py-16 text-center">
               <div className="w-16 h-16 rounded-full bg-brand-blue/10 border border-brand-blue/30 flex items-center justify-center">
                 <IconTaskAlt className="w-8 h-8 text-brand-blue" />
@@ -158,7 +169,11 @@ export default function ContactForm() {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} noValidate className="relative z-10 flex flex-col gap-8">
+            <form action={formAction} className="relative z-10 flex flex-col gap-8">
+              <input type="hidden" name="source" value="contact-page" />
+              {SERVICE_KEYS.filter((key) => selected.has(key)).map((key) => (
+                <input key={key} type="hidden" name="services" value={t(key)} />
+              ))}
 
               {/* ── Row 1: Name / Company / Email ── */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -334,20 +349,15 @@ export default function ContactForm() {
                   </label>
 
                   {/* Submit */}
-                  <button
-                    type="submit"
-                    disabled={state === "submitting"}
-                    className="rcs-button rcs-button-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-display font-bold text-sm disabled:opacity-60 disabled:cursor-not-allowed"
-                  >
-                    {state === "submitting" ? (
-                      <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                    ) : (
-                      <IconSend className="w-4 h-4" />
-                    )}
-                    {t("cta")}
-                  </button>
+                  <SubmitButton label={t("cta")} />
                 </div>
               </div>
+
+              {result?.error && (
+                <p className="text-sm font-medium text-red-500" role="alert">
+                  {t(result.error === "invalid" ? "error_invalid" : "error_failed")}
+                </p>
+              )}
 
             </form>
           )}

@@ -1,25 +1,41 @@
-'use server';
+"use server";
 
-type ContactState = {
+import { enquirySchema, sendEnquiryEmail } from "@/lib/contact-submission";
+
+export type ContactState = {
   success?: boolean;
-  error?: string;
+  /** Machine-readable code; the client maps it to a translated message. */
+  error?: "invalid" | "failed";
 } | null;
+
+const str = (formData: FormData, key: string) => {
+  const v = formData.get(key);
+  return typeof v === "string" ? v : "";
+};
 
 export async function sendContactMessage(
   _prevState: ContactState,
   formData: FormData
 ): Promise<ContactState> {
-  const name = formData.get("name") as string;
-  const email = formData.get("email") as string;
-  const subject = formData.get("subject") as string;
-  const message = formData.get("message") as string;
+  const parsed = enquirySchema.safeParse({
+    name: str(formData, "name"),
+    email: str(formData, "email"),
+    company: str(formData, "company"),
+    phone: str(formData, "phone"),
+    country: str(formData, "country"),
+    timeline: str(formData, "timeline"),
+    services: formData.getAll("services").filter((v): v is string => typeof v === "string"),
+    details: str(formData, "details"),
+    source: str(formData, "source"),
+  });
+  if (!parsed.success) return { error: "invalid" };
 
-  if (!name || !email || !subject || !message) {
-    return { error: "Please fill in all fields." };
+  try {
+    await sendEnquiryEmail(parsed.data);
+  } catch (err) {
+    console.error("Contact email failed:", err instanceof Error ? err.message : "unknown error");
+    return { error: "failed" };
   }
-
-  // TODO: integrate your email/CRM service here (e.g. Resend, SendGrid)
-  console.log("Contact form submission:", { name, email, subject, message });
 
   return { success: true };
 }

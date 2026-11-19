@@ -90,6 +90,7 @@ export default function FinalCTA() {
                 </div>
               ) : (
                 <form action={formAction} className="space-y-4">
+                  <input type="hidden" name="source" value="home-cta" />
                   <div>
                     <label
                       htmlFor="briefing-name"
@@ -133,7 +134,7 @@ export default function FinalCTA() {
                       </label>
                       <input
                         id="briefing-phone"
-                        name="subject"
+                        name="phone"
                         type="tel"
                         required
                         placeholder={t("field_phone_placeholder" as CTAKey)}
@@ -152,7 +153,7 @@ export default function FinalCTA() {
                       </label>
                       <select
                         id="briefing-domain"
-                        name="message"
+                        name="services"
                         className="rcs-select"
                       >
                         {PILLARS.map((pillar) => (
@@ -169,6 +170,7 @@ export default function FinalCTA() {
                       </label>
                       <select
                         id="briefing-urgency"
+                        name="timeline"
                         className="rcs-select"
                       >
                         <option>{t("urgency_opt1" as CTAKey)}</option>
@@ -179,7 +181,9 @@ export default function FinalCTA() {
                   </div>
 
                   {state?.error && (
-                    <p className="rcs-error" role="alert">{state.error}</p>
+                    <p className="rcs-error" role="alert">
+                      {t(state.error === "invalid" ? "error_invalid" : "error_failed")}
+                    </p>
                   )}
 
                   <SubmitButton label={t("submit")} pendingLabel={t("submitting")} />

@@ -1,9 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const DIFY_API_KEY = process.env.DIFY_API_KEY || "app-2ZoX3zqys8MzVj3MysUxauaH";
 const DIFY_API_URL = process.env.DIFY_API_URL || "https://api.dify.ai/v1";
 
 export async function POST(req: NextRequest) {
+  const apiKey = process.env.DIFY_API_KEY;
+  if (!apiKey) {
+    console.error("DIFY_API_KEY is not configured");
+    return NextResponse.json({ error: "Chat service is not configured" }, { status: 500 });
+  }
+
   try {
     const body = await req.json();
     const { query, conversation_id, user } = body;
@@ -11,11 +16,14 @@ export async function POST(req: NextRequest) {
     if (!query || typeof query !== "string" || !query.trim()) {
       return NextResponse.json({ error: "Query is required" }, { status: 400 });
     }
+    if (query.length > 1000) {
+      return NextResponse.json({ error: "Query is too long" }, { status: 400 });
+    }
 
     const response = await fetch(`${DIFY_API_URL}/chat-messages`, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${DIFY_API_KEY}`,
+        Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

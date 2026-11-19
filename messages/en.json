@@ -237,6 +237,8 @@
     "submitting": "Sending…",
     "success_title": "Message Received",
     "success_body": "Thank you for reaching out. Our team will be in touch shortly.",
+    "error_invalid": "Please check your details and try again.",
+    "error_failed": "We could not send your message. Please try again later or email us directly.",
     "cta_primary": "Talk to Our Experts",
     "cta_secondary": "Explore Our Services"
   },
@@ -516,6 +518,8 @@
     "cta": "Submit Enquiry",
     "success_title": "Thank You for Your Enquiry",
     "success_message": "Our team will review your requirements and get back to you shortly.",
+    "error_invalid": "Please check your details and try again.",
+    "error_failed": "We could not send your enquiry. Please try again later or email us directly.",
     "selected_count": "{count} selected",
     "country_ksa": "Saudi Arabia (KSA)",
     "country_uae": "United Arab Emirates (UAE)",
