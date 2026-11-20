@@ -40,10 +40,10 @@ export default function ServiceDetails({ detail, headings, proofNote }: ServiceD
   return (
     <section
       id="service-details"
-      className="w-full max-w-[1360px] mx-auto px-6 md:px-10 py-16 lg:py-24"
+      className="w-full max-w-[1360px] mx-auto px-6 md:px-6 py-6 lg:py-8"
     >
       {body && (
-        <ScrollReveal className="mb-8 max-w-3xl space-y-4">
+        <ScrollReveal className="mb-8 mx-auto text-center max-w-3xl space-y-4">
           {body.map((paragraph) => (
             <p key={paragraph} className="text-base text-text-secondary leading-relaxed">
               {paragraph}
@@ -53,7 +53,7 @@ export default function ServiceDetails({ detail, headings, proofNote }: ServiceD
       )}
 
       {proof && (
-        <ScrollReveal className="mb-8">
+        <ScrollReveal className="mb-8 flex flex-col items-center text-center">
           <div className="rcs-card rounded-xl p-6 max-w-3xl">
             <h2 className="font-display font-bold text-base text-text-primary mb-2">{headings.proof}</h2>
             <p className="text-sm text-text-secondary leading-relaxed">{proof}</p>
