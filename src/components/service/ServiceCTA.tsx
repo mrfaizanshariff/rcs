@@ -76,10 +76,11 @@ export default function ServiceCTA({
       className="w-full max-w-[1360px] mx-auto px-6 md:px-10 pt-10 pb-24 lg:pb-32"
     >
       <ScrollReveal y={32}>
-        <div className="rcs-card-spectrum relative rounded-3xl overflow-hidden p-10 sm:p-16 lg:p-20 flex flex-col items-center text-center">
+        <div className=" rcs-card rcs-card-spectrum relative rounded-3xl overflow-hidden p-10 sm:p-16 lg:p-20 flex flex-col items-center text-center">
 
           {/* ── Ambient glow ── */}
-          <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand-blue/10 blur-3xl pointer-events-none" />
+         <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-blue/15 rounded-full blur-[100px] pointer-events-none animate-[pulseSlow_8s_ease-in-out_infinite]" />
+          <div className="absolute -bottom-16 end-0 w-64 h-64 bg-spectrum-cyan/10 rounded-full blur-[80px] pointer-events-none" />
 
           {/* Eyebrow */}
           <div className="rcs-tag mb-6">

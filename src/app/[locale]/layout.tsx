@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { Inter, Manrope, Space_Grotesk, Noto_Sans_Arabic } from "next/font/google";
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -135,6 +136,7 @@ export default async function LocaleLayout({
           </main>
           <Footer />
           <ChatWidget />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
